@@ -4,6 +4,6 @@
   "repository": "https://github.com/williamauhk/testphp20222",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
    "addons": [
-    "mysql", "cloudinary"
+    "cleardb", "cloudinary"
   ]
 }
