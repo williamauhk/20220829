@@ -9,5 +9,5 @@ $dbname     = substr($cleardb_url["path"],1);
 
 	$database_username = 'root';
 	$database_password = '';
-	$pdo_conn = new PDO( 'mysql:host='.$host.';dbname='.$dbname, $user, $pass );
+	$pdo_conn = new PDO("mysql:host=".$host.";dbname=".$dbname, $user, $pass );
 ?>
