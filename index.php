@@ -67,6 +67,7 @@ body{width:615px;font-family:arial;letter-spacing:1px;line-height:20px;}
 	  <th class='table-header' width='20%'>Title</th>
 	  <th class='table-header' width='40%'>Description</th>
 	  <th class='table-header' width='20%'>Date</th>
+	  <th class='table-header' width='20%'>Action</th>
 	</tr>
   </thead>
   <tbody id='table-body'>
@@ -78,6 +79,8 @@ body{width:615px;font-family:arial;letter-spacing:1px;line-height:20px;}
 		<td><?php echo $row['post_title']; ?></td>
 		<td><?php echo $row['description']; ?></td>
 		<td><?php echo $row['post_at']; ?></td>
+		  <td><a class="ajax-action-links" href='edit.php?id=<?php echo $row['id']; ?>'><img src="crud-icon/edit.png" title="Edit" /></a> <a class="ajax-action-links" href='delete.php?id=<?php echo $row['id']; ?>'><img src="crud-icon/delete.png" title="Delete" /></a></td>
+	 
 	  </tr>
     <?php
 		}
